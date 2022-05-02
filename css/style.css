@@ -87,6 +87,15 @@
 }
 
 @media (max-width: 992px) {
+  .navbar .logo .logo-light {
+    display: none !important;
+  }
+  .navbar .logo .logo-dark {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 992px) {
   .navbar-nav .dropdown .dropdown-menu {
     border: none;
     -webkit-box-shadow: none;
@@ -115,15 +124,6 @@
 
 .navbar-light .logo .logo-dark {
   display: none;
-}
-
-@media (max-width: 992px) {
-  .navbar-light .logo .logo-light {
-    display: none;
-  }
-  .navbar-light .logo .logo-dark {
-    display: block;
-  }
 }
 
 .nav-sticky.navbar-light .nav-item .nav-link {
@@ -535,6 +535,46 @@ hr {
   padding-bottom: 48px !important;
 }
 
+@media (min-width: 320px) and (max-width: 375px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mode-btn {
+    right: -31px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .mode-btn {
+    right: -67px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .mode-btn {
+    right: -65px;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden !important;
@@ -709,7 +749,7 @@ p {
 }
 
 .testimonials .testimonial-tab-menu li {
-  width: 100%;
+  min-width: 280px;
   cursor: pointer;
 }
 
@@ -1668,13 +1708,8 @@ p {
   width: 80px;
 }
 
-.services .tab-content {
-  max-height: 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-x: hidden;
+.services-tab-link {
+  min-width: 250px !important;
 }
 
 @media (min-width: 992px) and (max-width: 1600px) {

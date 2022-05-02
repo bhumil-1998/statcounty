@@ -187,3 +187,41 @@ hr {
 .p-40 {
   padding-bottom: 48px !important;
 }
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mode-btn {
+    right: -31px;
+    top: 183px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .mode-btn {
+    right: -67px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .mode-btn {
+    right: -65px;
+  }
+}

@@ -84,11 +84,15 @@
   }
 }
 
+.services-tab-link {
+  min-width: 250px !important;
+}
+
 .services {
   .tab-content {
-    max-height: 300px;
-    flex-direction: column;
-    overflow-x: hidden;
+    // max-height: 300px;
+    // flex-direction: column;
+    // overflow-x: hidden;
   }
 }
 

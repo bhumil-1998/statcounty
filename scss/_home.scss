@@ -145,7 +145,7 @@
   background-color:rgb(224, 244, 209);
   .testimonial-tab-menu {
     li {
-      width: 100%;
+      min-width: 280px;
       cursor: pointer;
     }
   }
