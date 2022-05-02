@@ -1,0 +1,188 @@
+//
+// helper.scss
+//
+
+
+// color
+@each $color,
+$value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative !important;
+
+}
+
+.rounded-custom {
+  border-radius: 1rem !important;
+}
+
+
+.para-p {
+  max-width: 650px;
+}
+  
+  /*** ani-bg ***/
+  
+@keyframes ani-bg {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(200px);
+  }
+}
+  
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+  
+hr {
+  border-top: 1px solid $muted;
+  margin: 0;
+}
+
+.lh-1 {
+  letter-spacing: 1px;
+}
+
+// font-size
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-24 {
+  font-size: 23px;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-35{
+  font-size: 35px;
+}
+.f-37{
+  font-size: 37px;
+}
+
+.f-40{
+  font-size: 40px;
+}
+
+.f-50{
+  font-size: 50px;
+}
+
+.f-100{
+  font-size: 100px;
+}
+
+.margin-top-120 {
+  margin-top: 120px;
+}
+
+// avatar
+
+.avatar-xs {
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+}
+
+.avatar-sm {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+}
+
+.avatar-md {
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+}
+
+.avatar-lg {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.avatar-xl {
+  height: 6rem;
+  width: 6rem;
+}
+
+.avatar-xxl {
+  height: 8rem;
+  width: 8rem;
+}
+
+.border-light {
+  border-color: rgba(101, 101, 101, 0.1) !important;
+}
+
+.mode-btn.btn-hometitle {
+  border-color: transparent !important;
+  &:hover{
+    .face-secondary {
+      display: inline;
+    }
+  }
+}
+.mode-btn.btn-hometitle:hover {
+  // background: #79d138;
+  // border-color: none;
+  box-shadow: 0px 15px 20px -6px rgba(132, 213, 73, 60%) !important;
+}
+.mode-btn {
+  position: fixed !important;
+  padding: 0px 15px !important;
+  top: 28%;
+  right: 0px;
+  z-index: 1021;
+  color: $white;
+  line-height: 45px;
+  font-size: 16px !important;
+  text-align: center;
+  .face-secondary {
+    display: none;
+  }
+}
+.p-50 {
+  padding-bottom: 75px !important;
+}
+
+.p-40 {
+  padding-bottom: 48px !important;
+}

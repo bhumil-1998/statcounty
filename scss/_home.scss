@@ -1,0 +1,236 @@
+//
+// home.scss
+//
+
+// @mixin home-common {
+//   background-size: cover;
+//   align-self: center;
+//   position: relative;
+//   background-position: center center;
+// }
+// .bg-half-260 {
+//   padding: 260px 0;    
+//   @include home-common();
+// }
+// .bg-home-three {
+//   padding: 180px 0 420px;    
+//   @include home-common();
+// }
+// .bg-half-170 {
+//   padding: 170px 0;    
+//   @include home-common();
+// }
+
+.home {
+    align-items: center;
+    display: flex;
+    background-image: url(../images/hero-bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 180px 0px 180px 0px;
+    .up-botton-text {
+      position: absolute;
+      top: 50%;
+      left: -20%;
+  
+      h5 {
+        transform: rotate(90deg);
+      }
+    }
+    .smallphone-image {
+      animation: ani-bg 3s infinite;
+    }
+    .home-heading {
+      h1{
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+    } p {
+      font-size: 20px;
+      letter-spacing: 0.8px;
+    }
+    .down-arrow-btn {
+      position: absolute;
+      left: 0;
+      bottom: -22px;
+      display: block;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+      .started-button {
+        font-size: 17px;
+        color: $gray-700;
+        font-weight: 500;
+        &:focus {
+          box-shadow: none;
+        }
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    @keyframes ani-bg {
+      0% {
+        transform: translateY(0px);
+      }
+  
+      50% {
+        transform: translateY(30px);
+      }
+  
+      100% {
+        transform: translateY(0px);
+      }
+    }
+    .bg-overlay {
+      position: absolute; 
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(34,40,46,0.7);
+    }
+}
+
+
+// reason
+.reason {
+  p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+  .avatar-lg {
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+// expertise-box
+.expertise {
+  background-color:rgb(224, 244, 209);
+  p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+  .expertise-box {
+    .card-body {
+      padding: 15px 15px;
+    }
+    .avatar {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+// guaranteed section
+.guarnateed {
+  ul>li {
+    font-weight: 500;
+    letter-spacing: 0.6px;
+  } 
+  p {
+    font-size: 19px;
+    letter-spacing: 0.2px;
+  }
+}
+
+// testimonial 
+.testimonials{
+  background-color:rgb(224, 244, 209);
+  .testimonial-tab-menu {
+    li {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  .review-rate {
+    li {
+      margin-right: 1px !important;
+    }
+    i {
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+  .author-info {
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .testimonial-tab-menu.nav-pills .nav-link {
+    padding: 1rem 1rem;
+  }
+
+  .testimonial-tab-menu.nav-pills .nav-link.active, .testimonial-tab-menu.nav-pills .show > .nav-link {
+    border-color: var(--bs-white) !important;
+    box-shadow: 0px 20px 20px 0px rgba(2, 19, 79, 0.1);
+    background: var(--bs-white) !important;
+    transform: translateY(-3px);
+  }
+  .testimonial-tab-menu.nav-pills .nav-link.active {
+    color: var(--body-color);
+  }
+  .testimonial-tab-link {
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+  .testimonial-thumb {
+    img {
+      border: 2px solid $primary;
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+
+
+// footer
+.footer {
+  background-color: $primary;
+  .footer-icon {
+    a {
+      background-color:rgb(224, 244, 209);
+    }
+  }
+  .footer-item  li{
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+}
+// footer-alt 
+.footer-alt {
+  background-color: $primary;
+}
+
+@media (min-width:992px) and (max-width:1600px) {
+  .home {
+    height: 800px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width:1600px) and (max-width:1800px) {
+  .home {
+    height: 700px;
+  }
+}
+
+@media (min-width:1800px) and (max-width:2500px) {
+  .home {
+    height: 900px;
+    padding-bottom: 100px;
+  }
+}
