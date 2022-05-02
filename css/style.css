@@ -519,6 +519,8 @@ hr {
   line-height: 45px;
   font-size: 16px !important;
   text-align: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .mode-btn .face-secondary {
@@ -777,14 +779,14 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .home {
-    height: 700px;
+    height: 800px;
     padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .home {
-    height: 800px;
+    height: 700px;
   }
 }
 
@@ -1666,19 +1668,28 @@ p {
   width: 80px;
 }
 
+.services .tab-content {
+  max-height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
 @media (min-width: 992px) and (max-width: 1600px) {
   .service-height {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .service-height {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .service-height {
     height: 900px;
     padding-bottom: 100px;
@@ -1802,17 +1813,17 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .contact-us {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .contact-us {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .contact-us {
     height: 900px;
     padding-bottom: 100px;
@@ -1859,17 +1870,17 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .about-us {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .about-us {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .about-us {
     height: 900px;
     padding-bottom: 100px;

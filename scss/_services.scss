@@ -84,6 +84,14 @@
   }
 }
 
+.services {
+  .tab-content {
+    max-height: 300px;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+}
+
 @media (min-width:992px) and (max-width:1600px) {
   .service-height {
     height: 600px;
