@@ -8,6 +8,7 @@ function validateForm() {
   var email = document.forms["myForm"]["email"].value;
   var subject = document.forms["myForm"]["subject"].value;
   var message = document.forms["myForm"]["message"].value;
+  var number = document.forms["myForm"]["number"].value;
   document.getElementById("error-msg").style.opacity = 0;
   document.getElementById('error-msg').innerHTML = "";
   if (name == "" || name == null) {
@@ -43,6 +44,7 @@ function validateForm() {
       document.forms["myForm"]["email"].value = "";
       document.forms["myForm"]["subject"].value = "";
       document.forms["myForm"]["message"].value = "";
+      document.forms["myForm"]["number"].value = "";
     }
   };
   // debugger;
@@ -50,7 +52,7 @@ function validateForm() {
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
   xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-  xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message);
+  xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message + "&number=" + number);
   return false;
 }
 function fadeIn() {
