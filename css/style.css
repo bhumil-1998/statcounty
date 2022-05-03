@@ -17,13 +17,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 /**********************NAVBAR***********************/
-@media only screen and (min-width: 1600px) {
-  .container-fluid {
-    padding-right: 150px;
-    padding-left: 150px;
-  }
-}
-
 .navbar {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -535,43 +528,17 @@ hr {
   padding-bottom: 48px !important;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 1800px) {
   .mode-btn {
     right: -67px;
     top: 183px;
   }
 }
 
-@media (min-width: 375px) and (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px) {
   .mode-btn {
-    right: -67px;
+    right: -55px;
     top: 183px;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 768px) {
-  .mode-btn {
-    right: -67px;
-    top: 183px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .mode-btn {
-    right: -31px;
-    top: 183px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .mode-btn {
-    right: -67px;
-  }
-}
-
-@media (min-width: 1440px) and (max-width: 1600px) {
-  .mode-btn {
-    right: -65px;
   }
 }
 
@@ -819,14 +786,14 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .home {
-    height: 700px;
+    height: 800px;
     padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .home {
-    height: 800px;
+    height: 700px;
   }
 }
 
@@ -1714,20 +1681,26 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .service-height {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .service-height {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .service-height {
     height: 900px;
     padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features .card {
+    height: 530px;
   }
 }
 
@@ -1848,17 +1821,17 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .contact-us {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .contact-us {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .contact-us {
     height: 900px;
     padding-bottom: 100px;
@@ -1903,19 +1876,25 @@ p {
   position: relative;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team-post .content {
+    height: 250px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1600px) {
   .about-us {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .about-us {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .about-us {
     height: 900px;
     padding-bottom: 100px;

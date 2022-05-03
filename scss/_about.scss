@@ -41,6 +41,12 @@
     } 
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .team-post .content {
+      height: 250px;
+    }
+  }
+
 @media (min-width:992px) and (max-width:1600px) {
     .about-us {
         height: 600px;
