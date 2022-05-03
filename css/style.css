@@ -819,14 +819,14 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .home {
-    height: 700px;
+    height: 800px;
     padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .home {
-    height: 800px;
+    height: 700px;
   }
 }
 
@@ -1712,19 +1712,75 @@ p {
   min-width: 250px !important;
 }
 
+.flickity-prev-next-button {
+  padding: 0;
+  background: #ffffff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
+          box-shadow: -0.0625rem 0 0.625rem 0 rgba(0, 0, 0, 0.07), 0.3125rem 1.25rem 2.5rem 0 rgba(0, 0, 0, 0.04) !important;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 27%;
+  top: 29%;
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.flickity-button:focus,
+.flickity-button:active {
+  outline: none;
+  -webkit-box-shadow: 0 0 40px rgba(95, 125, 149, 0.1);
+          box-shadow: 0 0 40px rgba(95, 125, 149, 0.1);
+  opacity: 1;
+}
+
+.tns-nav {
+  text-align: center;
+}
+
+.tns-nav button {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #ffffff;
+  border-radius: 3px;
+  width: 8px;
+  height: 5px;
+  margin: 5px;
+}
+
+.tns-nav button.tns-nav-active {
+  background: #245c3c !important;
+}
+
+.tiny-slide .client-review {
+  min-height: 400px;
+}
+
 @media (min-width: 992px) and (max-width: 1600px) {
   .service-height {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .service-height {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .service-height {
     height: 900px;
     padding-bottom: 100px;
@@ -1848,17 +1904,17 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .contact-us {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .contact-us {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .contact-us {
     height: 900px;
     padding-bottom: 100px;
@@ -1905,17 +1961,17 @@ p {
 
 @media (min-width: 992px) and (max-width: 1600px) {
   .about-us {
-    height: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
   .about-us {
-    height: 800px;
+    height: 700px;
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2500px) {
+@media (min-width: 1600px) and (max-width: 2500px) {
   .about-us {
     height: 900px;
     padding-bottom: 100px;
