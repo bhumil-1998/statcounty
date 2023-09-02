@@ -8,6 +8,7 @@ function validateForm() {
   var email = document.forms["myForm"]["email"].value;
   var subject = document.forms["myForm"]["subject"].value;
   var message = document.forms["myForm"]["message"].value;
+  var number = document.forms["myForm"]["number"].value;
   document.getElementById("error-msg").style.opacity = 0;
   document.getElementById('error-msg').innerHTML = "";
   if (name == "" || name == null) {
@@ -35,23 +36,24 @@ function validateForm() {
     return false;
   }
 
-  // var xhttp = new XMLHttpRequest();
-  // xhttp.onreadystatechange = function () {
-  //   if (this.readyState == 4 && this.status == 200) {
-  //     document.getElementById("simple-msg").innerHTML = this.responseText;
-  //     document.forms["myForm"]["name"].value = "";
-  //     document.forms["myForm"]["email"].value = "";
-  //     document.forms["myForm"]["subject"].value = "";
-  //     document.forms["myForm"]["message"].value = "";
-  //   }
-  // };
-  // // debugger;
-  // xhttp.open("POST", "./php/contact.php");
-  // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  // xhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
-  // xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-  // xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message);
-  // return false;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("simple-msg").innerHTML = this.responseText;
+      document.forms["myForm"]["name"].value = "";
+      document.forms["myForm"]["email"].value = "";
+      document.forms["myForm"]["subject"].value = "";
+      document.forms["myForm"]["message"].value = "";
+      document.forms["myForm"]["number"].value = "";
+    }
+  };
+  // debugger;
+  xhttp.open("POST", "./php/contact.php");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
+  xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+  xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message + "&number=" + number);
+  return false;
 }
 function fadeIn() {
   var fade = document.getElementById("error-msg");

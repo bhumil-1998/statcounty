@@ -169,12 +169,13 @@ hr {
   position: fixed !important;
   padding: 0px 15px !important;
   top: 28%;
-  right: 0px;
+  right: -67px;
   z-index: 1021;
   color: $white;
   line-height: 45px;
   font-size: 16px !important;
   text-align: center;
+  transform: rotate(90deg);
   .face-secondary {
     display: none;
   }
@@ -186,3 +187,42 @@ hr {
 .p-40 {
   padding-bottom: 48px !important;
 }
+
+@media (min-width: 320px) and (max-width: 1800px) {
+  .mode-btn {
+    right: -67px;
+    top: 183px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .mode-btn {
+    right: -55px;
+    top: 183px;
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//   .mode-btn {
+//     right: -32px;
+//     top: 183px;
+//   }
+// }
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .mode-btn {
+//     right: -31px;
+//     top: 183px;
+//   }
+// }
+// @media (min-width: 1024px) and (max-width: 1440px) {
+//   .mode-btn {
+//     right: -67px;
+//   }
+// }
+
+// @media (min-width: 1440px) and (max-width: 1600px) {
+//   .mode-btn {
+//     right: -65px;
+//   }
+// }
