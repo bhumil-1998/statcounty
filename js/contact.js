@@ -3,7 +3,6 @@ document.getElementById("myForm").onsubmit = function(){
 };
 // Contact Form
 function validateForm() {
-  debugger;
   var name = document.forms["myForm"]["name"].value;
   var email = document.forms["myForm"]["email"].value;
   var subject = document.forms["myForm"]["subject"].value;
@@ -47,7 +46,6 @@ function validateForm() {
       document.forms["myForm"]["number"].value = "";
     }
   };
-  // debugger;
   xhttp.open("POST", "./php/contact.php");
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.setRequestHeader("Access-Control-Allow-Credentials", "true");
