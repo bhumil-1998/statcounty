@@ -3,7 +3,7 @@ document.getElementById("myForm").onsubmit = function(){
 };
 // Contact Form
 function validateForm() {
-  debugger;
+  // debugger;
   var name = document.forms["myForm"]["name"].value;
   var email = document.forms["myForm"]["email"].value;
   var subject = document.forms["myForm"]["subject"].value;
